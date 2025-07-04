@@ -280,7 +280,7 @@ private void updateStackUI() {
         double size = switch (config.getDifficulty()) {
             case EASY -> 80;
             case MEDIUM -> 60;
-            case HARD -> 50;
+            case HARD -> 45;
         };
         
         button.setPrefSize(size, size);
@@ -432,7 +432,6 @@ private void updateStackUI() {
             return;
         }
         
-        // Flip card with animation
         flipCard(cardIndex, true);
         
         revealed[cardIndex] = true;
